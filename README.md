@@ -1,66 +1,73 @@
 # Analysis-of-World-Population-Infant-Mortality-and-Life-Expectancy-1
 
-Proyecto del curso ofrecido por Datdata en Udemy - Curso Power BI Análisis de Datos y Business Intelligence
+In the first World Population report, 3 .xlsx files are loaded
 
-En él informe primer Población Mundial, se cargan 3 archivos .xlsx
+Population, contains a list of countries and number of habitants.
+Countries, contains list of countries, country code and its respective continent.
+all the data that is not going to be used is hidden, in this case the Countries table and the Country column of the Population table.
 
-Population, contiene un listado de países y cantidad de habitantes.
-Countries, contiene listado de países, código del país y su respectivo continente.
-Países, es el símil de Countries pero en español.
-Al querer trabajar los datos en idioma español, se ocultan todos los datos que no se van a utilizar, en este caso la tabla Countries y la columna Country de la tabla Population.
+In the second Mortality and Life Expectancy, 2 additional .xlsx files are uploaded
 
-En el segundo Mortalidad y Esperanza de Vida, se cargan 2 archivos .xlsx adicionales
+Infant+death+rate, contains a list of countries and the average number of infant deaths per 1,000 deaths.
+Life+expectancy, contains a list of countries and the average life expectancy.
 
-Infant+death+rate, contiene un listado de países y el promedio de muertes infantiles por cada 1000 decesos.
-Life+expectancy, contiene un listado de países y el promedio de esperanza de vida.
-En el modelo de datos se generan las siguientes relaciones:
-Modelo
 
-Informe Población Mundial
-Un Treemap con la cantidad de habitantes por país
-Una Matriz donde podemos ver el detalle de habitantes por continente y país
-Un Mapa donde se puede observar la distribución de países por continente, las burbujas están condicionas al tamaño de la población de cada país
-Adicional al filtro segmentado la cantidad de habitantes se agregó uno por continente
+#The following relationships are generated in the data model:
 
-Poblacion Mundial
+![image](https://user-images.githubusercontent.com/112581327/187766219-a8782e64-82ce-43d9-84f2-cd42395fe383.png)
 
-En Power Query se genera una columna condicional para segmentar los países en 4 categorías:
+Estos dos segmetaciones se usan como filtro sumadas a los dos anteriores.
+
+
+#World Population Report
+
+A Treemap with the number of habitants per country
+A Matrix where we can see the detail of habitants by continent and country
+A Map where you can see the distribution of countries by continent, the bubbles are conditioned to the size of the population of each country
+In addition to the segmented filter, the number of habitants was added one per continent
+
+![image](https://user-images.githubusercontent.com/112581327/187766579-c1fe018c-31ab-48b7-9be4-a598424e285f.png)
+
+In Power Query a conditional column is generated to segment countries into 4 categories:
 
 0 - 1M
 1M - 10M
 10M - 100M
 100M >
-Con esta segmetación se agrega un filtro
+With this segmentation a filter is added
 
-PQ Cantidad Poblacion
-
-Informe Mortalidad Infantil y Esperanza de Vida
-Una Matriz donde podemos ver el detalle de habitantes por continente y país, promedio de Esperenza de Vida y promedio de Mortalidad Infantil
-Gráfico de dispersión, estudiando la relación entre la esperanza de vida y la mortalidad infantil
-Un Mapa donde se puede observar la distribución de países por continente, las burbujas están condicionas al tamaño de la Mortalidad Infantil
-Mortalidad
- ![image](https://user-images.githubusercontent.com/112581327/187763506-9ffddded-9c89-454c-adf7-8ccdf7d8090d.png)
+![image](https://user-images.githubusercontent.com/112581327/187766973-f81a4644-b689-4e06-a891-a303626b1b13.png)
 
 
-En Power Query se genera una columna condicional en cada tabla para segmentar:
+#Infant Mortality and Life Expectancy Report
 
-Mortalidad Infantil
-0 a 10
-10 a 25
+A Matrix where we can see the detail of inhabitants by continent and country, average Life Expectancy and average Infant Mortality
+Scatter plot, studying the relationship between life expectancy and infant mortality
+A Map where you can see the distribution of countries by continent, the bubbles are conditioned to the size of Infant Mortality
+
+
+![image](https://user-images.githubusercontent.com/112581327/187767180-3bac8288-cea4-46bd-9274-06fa8e6260ba.png)
+
+In Power Query a conditional column is generated in each table to slice:
+
+Child mortality
+0 to 10
+10 to 25
 25 0 50
 50 >
-PQ Mortalidad
 
-Esperanza de Vida
-0 a 60
-60 a 70
-70 a 80
+![image](https://user-images.githubusercontent.com/112581327/187767326-fe2cf6c6-302d-48b1-a566-caf16c7f70df.png)
+
+Life expectancy
+0 to 60
+60 to 70
+70 to 80
 80 >
-Esperanza de vida promedio
+![image](https://user-images.githubusercontent.com/112581327/187767397-de727e47-56ee-4611-8ef3-f8e47d7e9dee.png)
 
-Estos dos segmetaciones se usan como filtro sumadas a los dos anteriores.
+These two segmentations are used as a filter added to the previous two.
 
-Algunas conclusiones que se pueden sacar de este informe
-A menor esperanza de vida mayor es la mortalidad infantil, siendo el continente africano el más afectado por esta tendencia.
-Angola representa el país más afectado ya que su esperanza de vida promedio es de 56 años y una mortalidad infantil de 191 por cada 1000 decesos.
-El país menos afectado en Mónaco perteneciente al continente Europeo con una esperanza de vida promedio de 89 años y una mortalidad infantil de 5 por cada 1000 decesos.
+Some conclusions that can be drawn from this report
+The lower life expectancy, the higher infant mortality, with the African continent being the most affected by this trend.
+Angola represents the most affected country since its average life expectancy is 56 years and an infant mortality rate of 191 per 1,000 deaths.
+The least affected country in Monaco belonging to the European continent with an average life expectancy of 89 years and an infant mortality of 5 per 1000 deaths
