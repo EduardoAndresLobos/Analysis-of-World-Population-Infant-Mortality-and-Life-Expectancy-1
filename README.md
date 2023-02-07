@@ -1,6 +1,6 @@
 # Analysis-of-World-Population-Infant-Mortality-and-Life-Expectancy-1
 
-In the first World Population report, 3 .xlsx files are loaded
+<h3>In the first World Population report, 3 .xlsx files are loaded </h3>
 
 Population, contains a list of countries and number of habitants.
 Countries, contains list of countries, country code and its respective continent.
@@ -12,14 +12,13 @@ Infant+death+rate, contains a list of countries and the average number of infant
 Life+expectancy, contains a list of countries and the average life expectancy.
 
 
-#The following relationships are generated in the data model:
+<h3>The following relationships are generated in the data model: </h3>
 
 ![image](https://user-images.githubusercontent.com/112581327/187766219-a8782e64-82ce-43d9-84f2-cd42395fe383.png)
 
-Estos dos segmetaciones se usan como filtro sumadas a los dos anteriores.
 
 
-#World Population Report
+<h3>World Population Report </h3>
 
 A Treemap with the number of habitants per country
 A Matrix where we can see the detail of habitants by continent and country
@@ -28,7 +27,7 @@ In addition to the segmented filter, the number of habitants was added one per c
 
 ![image](https://user-images.githubusercontent.com/112581327/187766579-c1fe018c-31ab-48b7-9be4-a598424e285f.png)
 
-In Power Query a conditional column is generated to segment countries into 4 categories:
+<h3>In Power Query a conditional column is generated to segment countries into 4 categories: </h3>
 
 0 - 1M
 1M - 10M
@@ -39,7 +38,7 @@ With this segmentation a filter is added
 ![image](https://user-images.githubusercontent.com/112581327/187766973-f81a4644-b689-4e06-a891-a303626b1b13.png)
 
 
-#Infant Mortality and Life Expectancy Report
+<h3>Infant Mortality and Life Expectancy Report </h3>
 
 A Matrix where we can see the detail of inhabitants by continent and country, average Life Expectancy and average Infant Mortality
 Scatter plot, studying the relationship between life expectancy and infant mortality
@@ -48,7 +47,7 @@ A Map where you can see the distribution of countries by continent, the bubbles 
 
 ![image](https://user-images.githubusercontent.com/112581327/187767180-3bac8288-cea4-46bd-9274-06fa8e6260ba.png)
 
-In Power Query a conditional column is generated in each table to slice:
+<h3>In Power Query a conditional column is generated in each table to slice: </h3>
 
 Child mortality
 0 to 10
@@ -58,16 +57,8 @@ Child mortality
 
 ![image](https://user-images.githubusercontent.com/112581327/187767326-fe2cf6c6-302d-48b1-a566-caf16c7f70df.png)
 
-Life expectancy
-0 to 60
-60 to 70
-70 to 80
-80 >
-![image](https://user-images.githubusercontent.com/112581327/187767397-de727e47-56ee-4611-8ef3-f8e47d7e9dee.png)
 
-These two segmentations are used as a filter added to the previous two.
-
-Some conclusions that can be drawn from this report
+<h3>Some conclusions that can be drawn from this report </h3>
 The lower life expectancy, the higher infant mortality, with the African continent being the most affected by this trend.
 Angola represents the most affected country since its average life expectancy is 56 years and an infant mortality rate of 191 per 1,000 deaths.
 The least affected country in Monaco belonging to the European continent with an average life expectancy of 89 years and an infant mortality of 5 per 1000 deaths
