@@ -1,4 +1,4 @@
-# Analysis-of-World-Population-Infant-Mortality-and-Life-Expectancy
+# Analysis of World Population,Infant Mortality and Life Expectancy
 
 <h3>In the first World Population report, 3 .xlsx files are loaded </h3>
 
